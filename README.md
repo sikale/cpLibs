@@ -9,12 +9,12 @@ A curated repo of compatible libraries for <a href="https://github.com/tinyBigGA
 ### Contribution Guidelines
 **Note that only open-source libraries are considered. No commercial projects allowed!**  
 
-- Add includes the root of **`include`** folder, such as **`raylib`**, or **`SFML`**.
-- Add library (**.DLL**, **.LIB**, **.DEF**) to root of the `lib` folder.
-- Add a working example **`name`** to root of the **`examples`** folder.
+- Add include files (**.H**) to the root of **`library/include`** folder, such as **`raylib`**, or **`SFML`**.
+- Add library files (**.DLL**, **.LIB**, **.DEF**) to root of the `library/lib` folder.
+- Add working example **`libraryname`** folder to root of the **`examples`** folder. See `examples/template` folder a base template project you can use.
 - Make a pull request for your contribution.
 - New items should be added to the bottom of the contents section.
-- Use the following format: [x] **Title** `[DLL, LIB, DEF]` (library URL)
+- Use the following format:  [x] **Title** `[DLL, LIB, DEF]` (library URL)
 - Check your spelling and grammar.
 - The pull request and commit should have a useful title.
 
