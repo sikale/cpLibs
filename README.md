@@ -25,5 +25,3 @@ Thank you for your suggestions! :thumbsup:
 - [x] **miniaudio** `[LIB]` (https://github.com/mackron/miniaudio)
 - [x] **raylib** `[DLL]` (https://github.com/raysan5/raylib)
 - [x] **sfml** `[DLL]` (https://github.com/SFML/CSFML)
-- [ ] **Nuklear** `[LIB]` (https://github.com/Immediate-Mode-UI/Nuklear)
-- [ ] **enet** `[LIB]` (https://github.com/lsalzman/enet)
