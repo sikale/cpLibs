@@ -1,0 +1,72 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{AFE826FF-DAA6-4BA1-B158-67393AAD8AF2}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="allegro\allegro.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="miniaudio\miniaudio.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="raylib\raylib.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="sfml\sfml.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="allegro">
+        <MSBuild Projects="allegro\allegro.dproj"/>
+    </Target>
+    <Target Name="allegro:Clean">
+        <MSBuild Projects="allegro\allegro.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="allegro:Make">
+        <MSBuild Projects="allegro\allegro.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="miniaudio">
+        <MSBuild Projects="miniaudio\miniaudio.dproj"/>
+    </Target>
+    <Target Name="miniaudio:Clean">
+        <MSBuild Projects="miniaudio\miniaudio.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="miniaudio:Make">
+        <MSBuild Projects="miniaudio\miniaudio.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="raylib">
+        <MSBuild Projects="raylib\raylib.dproj"/>
+    </Target>
+    <Target Name="raylib:Clean">
+        <MSBuild Projects="raylib\raylib.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="raylib:Make">
+        <MSBuild Projects="raylib\raylib.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="sfml">
+        <MSBuild Projects="sfml\sfml.dproj"/>
+    </Target>
+    <Target Name="sfml:Clean">
+        <MSBuild Projects="sfml\sfml.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="sfml:Make">
+        <MSBuild Projects="sfml\sfml.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="allegro;miniaudio;raylib;sfml"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="allegro:Clean;miniaudio:Clean;raylib:Clean;sfml:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="allegro:Make;miniaudio:Make;raylib:Make;sfml:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
