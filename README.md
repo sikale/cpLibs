@@ -18,7 +18,7 @@ A curated repo of compatible libraries for <a href="https://github.com/tinyBigGA
 - Check your spelling and grammar.
 - The pull request and commit should have a useful title.
 
-Thank you for your suggestions! :thumbsup:
+Thank you for your contributions! :thumbsup:
 
 ### Content
 - [x] **allegro** `[DLL]` (https://github.com/liballeg/allegro5)
