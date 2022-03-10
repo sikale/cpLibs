@@ -51,7 +51,6 @@
 
 /*
 This example demonstrates how to initialize an audio engine and play a sound.
-This will play the sound specified on the command line.
 */
 #include <miniaudio.h>
 #include <stdio.h>
